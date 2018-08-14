@@ -17,6 +17,7 @@ namespace PairWithGivenSumExist
             Console.ReadLine();
         }
 
+        //naive solution with O(n^2)
         private static bool IsPairExistWithSum(int[] arr, int sum)
         {
             for (int i = 0; i < arr.Length; i++)
@@ -30,6 +31,7 @@ namespace PairWithGivenSumExist
             return false;
         }
 
+        //O(n) solution with HashSet
         private static bool IsPairExistWithSumWithHash(int[] arr, int sum)
         {
             if (arr == null || arr.Length < 2)
